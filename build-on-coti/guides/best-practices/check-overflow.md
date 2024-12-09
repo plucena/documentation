@@ -2,10 +2,6 @@
 
 Extra caution should be exercised when performing addition, subtraction, or division operations. For instance, it's important to verify that an overflow hasn't occurred in cases where it could potentially happen.
 
-{% hint style="info" %}
-Coming soon addition and subtraction operations, accompanied by a resulting gtBool value indicating overflow.
-{% endhint %}
-
 <mark style="color:red;">**Avoid:**</mark>
 
 ```solidity
@@ -30,3 +26,7 @@ contract AvoidContract {
     }
 }
 ```
+
+{% hint style="info" %}
+You may also use the `checkedAdd`, `checkedSub` and `checkedMul` operands, which cause the transaction to revert on overflow/underflow.
+{% endhint %}
