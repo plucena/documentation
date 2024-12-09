@@ -1,6 +1,6 @@
 # COTI Architecture
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Topology of the COTI Network</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Topology of the COTI Network</p></figcaption></figure>
 
 The COTI network is comprised of several core components:
 
