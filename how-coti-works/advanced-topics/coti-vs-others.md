@@ -8,5 +8,5 @@ COTI V2, powered by Garbled Circuits (GC), offers unmatched capabilities in priv
 
 COTI simplifies the decryption process and offers a more streamlined approach compared to traditional FHE providers. Unlike asynchronous setups that require multiple steps and callbacks, COTI enables synchronous decryption directly within smart contracts, instantly making results available for conditional checks and seamless contract execution. This simplicity not only enhances efficiency but also reduces development complexity. Furthermore, COTI strengthens privacy by securely re-encrypting decrypted data with the user’s AES key before returning it, eliminating the need for manual access control configurations. By combining ease of use with robust privacy measures, COTI delivers an unparalleled decryption experience for privacy-centric applications.
 
-
+Interested to learn more about the performance of Garbling Circuits vs. other technologies? checkout this [article](https://medium.com/cotinetwork/cotis-v2-cutting-edge-garbled-circuits-compared-to-other-privacy-preserving-smart-contracts-9e5b912612fa)
 
