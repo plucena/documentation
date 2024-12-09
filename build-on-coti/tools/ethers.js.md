@@ -6,6 +6,10 @@ While most of the existing SDKs should work out of the box, using unique COTI fe
 
 The library is made in such a way that after replacing ethers with `coti-ethers` most client apps will work out of box.
 
+## Clone, Build & Test
+
+Full instructions for building and testing the package locally are available in the [coti-ethers GitHub repository](https://github.com/coti-io/coti-ethers)
+
 ## Installation
 
 ```bash

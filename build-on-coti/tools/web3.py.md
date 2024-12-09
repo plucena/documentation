@@ -8,7 +8,7 @@ The library is made in such a way that after replacing web3 with `coti-web3` mos
 
 ## Clone, Build & Test
 
-See the instructions in [coti-web3.py GitHub repository](https://github.com/coti-io/coti-web3.py)
+Full instructions for building and testing the package locally are available in the [coti-web3.py GitHub repository](https://github.com/coti-io/coti-web3.py)
 
 ## Installation
 

@@ -86,6 +86,7 @@ function validateCiphertext(itUint64 memory input) returns (gtUint64)
 ```
 
 * Verifies that a given inputtext has a valid signature and onboards it into the gcEVM, returning a Garbledtext™ value.
+* If the input is not valid, the call will revert with no return data and no additional gas will be consumed.
 
 ```solidity
 function onBoard(ctUint64 ct) returns (gtUint64)
@@ -238,3 +239,43 @@ function mux(gtBool bit, gtUint64 a, gtUint64 b) returns (gtUint64)
 * Returns an encrypted value (either `a` or `b`) based on the encrypted boolean input
 * If `bit` is **false**, then the returned value is equal to `a`
 * If `bit` is **true**, then the returned value is equal to `b`
+
+### Enums
+
+```solidity
+enum MPC_TYPE { SBOOL_T, SUINT8_T, SUINT16_T, SUINT32_T, SUINT64_T }
+```
+
+* Represent different MPC data types
+
+```solidity
+enum ARGS { BOTH_SECRET, LHS_PUBLIC, RHS_PUBLIC }
+```
+
+* Represent different argument types
+
+### Encoding Functions
+
+```solidity
+function combineEnumsToBytes2(MPC_TYPE mpcType, ARGS argsType) returns (bytes2)
+```
+
+* Combines an `MPC_TYPE` and `ARGS` into a `bytes2` value.
+
+```solidity
+function combineEnumsToBytes3(MPC_TYPE mpcType1, MPC_TYPE mpcType2, ARGS argsType) returns (bytes3)
+```
+
+* Combines two `MPC_TYPE` values and an `ARGS` value into a `bytes3` value.
+
+```solidity
+function combineEnumsToBytes4(MPC_TYPE mpcType1, MPC_TYPE mpcType2, MPC_TYPE mpcType3, ARGS argsType) returns (bytes4)
+```
+
+* Combines three `MPC_TYPE` values and an `ARGS` value into a `bytes4` value.
+
+```solidity
+function combineEnumsToBytes5(MPC_TYPE mpcType1, MPC_TYPE mpcType2, MPC_TYPE mpcType3, MPC_TYPE mpcType4, ARGS argsType) returns (bytes5)
+```
+
+* Combines four `MPC_TYPE` values and an `ARGS` value into a `bytes4` value.

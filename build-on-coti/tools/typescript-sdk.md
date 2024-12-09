@@ -9,6 +9,10 @@ The [**COTI Typescript SDK**](https://github.com/coti-io/coti-sdk-typescript) pr
 * **Signing of Ethereum transactions** using the `ethers` library's signing mechanisms.
 * Utilities for encoding/decoding, padding, and cryptographic data manipulation.
 
+## Clone, Build & Test
+
+Full instructions for building and testing the package locally are available in the [coti-sdk-typescript GitHub repository](https://github.com/coti-io/coti-sdk-typescript)
+
 ## Installation
 
 ```bash

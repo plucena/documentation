@@ -2,6 +2,10 @@
 
 The [**COTI Python SDK**](https://github.com/coti-io/coti-sdk-python) provides a set of encryption, decryption, and cryptographic utilities, including RSA and AES encryption, message signing, and key handling functions. The utilities are primarily designed to work with cryptographic operations for secure communication and message signing, particularly within Ethereum smart contracts or similar environments.
 
+## Clone, Build & Test
+
+Full instructions for building and testing the package locally are available in the [coti-sdk-python GitHub repository](https://github.com/coti-io/coti-sdk-python)
+
 ## Installation
 
 ```bash
