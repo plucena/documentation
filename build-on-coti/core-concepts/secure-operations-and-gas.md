@@ -1,0 +1,31 @@
+---
+description: >-
+  Secure operations are supported via our gcEVM extension, which is implemented
+  through a set of precompiled contracts.
+---
+
+# Supported Operations on Private Data Types
+
+To introduce a new private datum into the gcEVM, the function should include an argument of type `Inputtext`. Inside the function, you must call `ValidateCiphertext`, which validates the input and returns a `Garbledtext` if successful or an error otherwise. Note that values of type `Garbledtext` can be used in secure computations, and can also be converted into a `Ciphertext` type by calling `Offboard`. Values of type `Ciphertext` can be stored temporarily in memory or permanently as a state variable. Note that values of type `Ciphertext` cannot be used for secure computations, and therefore must be converted back into a `Garbledtext` type by calling `Onboard` in order to perform additional secure computations on them.
+
+## List of Operations and Their Required Gas
+
+{% hint style="warning" %}
+Each operation within the network requires a specific amount of gas. It's important to note that the following gas allocations are intended to be proportional and serve as initial estimates. The final determination of gas requirements will be made at a later stage, taking into account various factors such as network performance, usage patterns, and protocol optimizations.
+{% endhint %}
+
+List of  arithmetic operations supported using `Garbledtext` and their required Gas units
+
+<table data-full-width="false"><thead><tr><th width="133">Operation</th><th>Bool</th><th>gtUint8</th><th>gtUint16</th><th>gtUint32</th><th>gtUint64</th><th>gtString**</th><th data-hidden data-type="number">gtString</th></tr></thead><tbody><tr><td><code>And</code></td><td>12005</td><td>12040</td><td>12080</td><td>12160</td><td>12320</td><td></td><td>null</td></tr><tr><td><code>Or</code></td><td>12005</td><td>12042</td><td>12084</td><td>12169</td><td>12339</td><td></td><td>null</td></tr><tr><td><code>Xor</code></td><td>12000</td><td>12000</td><td>12001</td><td>12003</td><td>12006</td><td></td><td>null</td></tr><tr><td><code>Add</code></td><td></td><td>12037</td><td>12080</td><td>12167</td><td>12340</td><td></td><td>null</td></tr><tr><td><code>Sub</code></td><td></td><td>12080</td><td>12165</td><td>12337</td><td>12679</td><td></td><td>null</td></tr><tr><td><code>Mul</code></td><td></td><td>12620</td><td>14571</td><td>22467</td><td>54233</td><td></td><td>null</td></tr><tr><td><code>Div</code></td><td></td><td>12969</td><td>15960</td><td>28009</td><td>76377</td><td></td><td>null</td></tr><tr><td><code>Rem</code></td><td></td><td>12969</td><td>15960</td><td>28009</td><td>76377</td><td></td><td>null</td></tr><tr><td><code>Min</code></td><td>12010</td><td>12121</td><td>12249</td><td>12503</td><td>13012</td><td></td><td>null</td></tr><tr><td><code>Max</code></td><td>12010</td><td>12121</td><td>12249</td><td>12503</td><td>13012</td><td></td><td>null</td></tr><tr><td><code>Lt</code></td><td>12005</td><td>12080</td><td>12166</td><td>12337</td><td>12679</td><td></td><td>null</td></tr><tr><td><code>Gt</code></td><td>12010</td><td>12121</td><td>12249</td><td>12503</td><td>13012</td><td></td><td>null</td></tr><tr><td><code>Ge</code></td><td>12005</td><td>12080</td><td>12165</td><td>12337</td><td>12679</td><td></td><td>null</td></tr><tr><td><code>Le</code></td><td>12010</td><td>12122</td><td>12249</td><td>12503</td><td>13012</td><td></td><td>null</td></tr><tr><td><code>Eq</code></td><td>12000</td><td>12037</td><td>12079</td><td>12164</td><td>12334</td><td>12334</td><td>null</td></tr><tr><td><code>Ne</code></td><td>12000</td><td>12037</td><td>12079</td><td>12164</td><td>12334</td><td>12334</td><td>null</td></tr><tr><td><code>Not</code></td><td>12000</td><td></td><td></td><td></td><td></td><td></td><td>null</td></tr></tbody></table>
+
+\*\* Note that the gas units listed for the gtString type are for every 8 characters in the string.  This is due to the way encrypted strings are represented in memory/storage.
+
+## Other Special Function and Their Required Gas units
+
+{% hint style="info" %}
+A more detailed explanation on the functionality of these functions can be found in the [**MPC Core library**](https://app.gitbook.com/o/-MgoVlq5Hr-DSFn_cBMH/s/eC83qbrBhITO4kE7kTNB/~/changes/1/build-on-coti/tools/contracts-library/mpc-core).
+{% endhint %}
+
+<table><thead><tr><th width="262">Operation</th><th>gtBool</th><th>gtUint8</th><th>gtUint16</th><th>gtUint32</th><th>gtUint64</th><th>gtString**</th></tr></thead><tbody><tr><td><code>SetPublic</code></td><td>12000</td><td>12000</td><td>12001</td><td>12003</td><td>12006</td><td>12006</td></tr><tr><td><code>Decrypt</code></td><td>12000</td><td>12000</td><td>12001</td><td>12003</td><td>12006</td><td>12006</td></tr><tr><td><code>Onboard</code></td><td>47039</td><td>47039</td><td>47039</td><td>47039</td><td>47039</td><td>47039</td></tr><tr><td><code>ValidateCiphertext</code></td><td>47039</td><td>47039</td><td>47039</td><td>47039</td><td>47039</td><td>47039</td></tr><tr><td><code>Offboard</code></td><td>47039</td><td>47040</td><td>47040</td><td>47042</td><td>47045</td><td>47045</td></tr><tr><td><code>OffboardToUser</code></td><td>47039</td><td>47040</td><td>47040</td><td>47042</td><td>47045</td><td>47045</td></tr><tr><td><code>Rand</code></td><td>6000</td><td>6000</td><td>6000</td><td>6000</td><td>6000</td><td></td></tr><tr><td><code>RandBoundedBits</code></td><td>6000</td><td>6000</td><td>6000</td><td>6000</td><td>6000</td><td></td></tr><tr><td><code>Mux</code></td><td>12005</td><td>12041</td><td>12083</td><td>12166</td><td>12332</td><td></td></tr><tr><td><code>Transfer</code></td><td></td><td>12201</td><td>12413</td><td>12837</td><td>13685</td><td></td></tr><tr><td><code>TransferWithAllowance</code></td><td></td><td>12301</td><td>12619</td><td>13255</td><td>14527</td><td></td></tr></tbody></table>
+
+\*\* Note that the gas units listed for the gtString type are for every 8 characters in the string.  This is due to the way encrypted strings are represented in memory/storage.

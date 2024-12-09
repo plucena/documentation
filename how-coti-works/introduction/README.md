@@ -1,0 +1,3 @@
+# Introduction
+
+Privacy is a critical concern in blockchain technology, where the transparency of decentralized networks conflicts with the confidentiality users often expect. Unlike traditional systems with access controls and encryption, blockchain platforms—particularly the EVM—lack built-in privacy, exposing all data across the network. This openness can deter users and industries that require discretion, risking data exposure and regulatory issues. To address these challenges, COTI is introducing garbled circuits to enable private transactions, balancing blockchain transparency with the confidentiality essential for broader adoption, regulatory compliance, and respect for user privacy.
