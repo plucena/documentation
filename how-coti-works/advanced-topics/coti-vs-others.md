@@ -22,7 +22,7 @@ COTI’s tests timed how low long it takes to execute a series of OPCODES 1,000 
 
 Using this data, direct comparison for the relative performance of COTI’s garbled circuits and TFHE-rs is possible.
 
-#### Consistency Across Input Size
+### Consistency Across Input Size
 
 Performance for GCs tends to be relatively consistent, regardless of the length of the inputs. For most OPCODES, including ADD, AND, OR, EQUAL, GREATER THAN, and LESS THAN, the functions execute with a variation of roughly 10-15%, regardless of whether the input is 8, 16, 32, or 64 bits. This is largely due to the fact that network latency represents a greater delay than the execution of such small circuits.
 
@@ -30,13 +30,13 @@ More complex operations including MULTIPLY, DIVIDE, and REMAINDER have greater v
 
 This contrasts with TFHE-rs, where scaling for these operations is superlinear. For example, multiplication for 128-bit inputs takes around 2.6x longer than for 64-bit inputs, and 256 bits takes 3.3x longer than for 128.
 
-#### Efficiency Ratios
+### Efficiency Ratios
 
 1,000 64-bit ADD operations, which is a fairly simple function, takes 49,411 μs, or 20,238 operations per second. A more complex function, such as a 64-bit MULTIPLY, still allows for 4,276 operations per second, indicating that MULTIPLY takes around 4.73x longer than ADD. The DIVIDE to ADD ratio is around 11.6.
 
 While the performance for these complex operations is longer than for ADD, the performance ratio is still low, indicating that such operations are still executed efficiently. For comparison, the MULTIPLY to ADD ratio (64-bit) for TFHE-rs is around 2.8, while the DIVIDE to ADD ratio is 70. These ratios increase notably with greater bit length.
 
-#### Performance Comparison
+### Performance Comparison
 
 GCs perform significantly faster than FHE for all benchmarked operations. Overall, COTI’s GCs are between 1,800 and 3,000 times faster than TFHE-rs.
 
@@ -44,7 +44,7 @@ GCs perform significantly faster than FHE for all benchmarked operations. Overal
 * For 64-bit MULTIPLY, GCs take ≈233.8 μs per operation. TFHE-rs takes 425,000 μs per operation, making GCs around 1,818x faster.
 * For 64-bit GREATER THAN, GCs take ≈ 43.9 μs per operation. TFHE-rs takes 116,000 μs per operation, making GCs around 2,642x faster.
 
-#### Storage Efficiency
+### Storage Efficiency
 
 Storage efficiency becomes particularly important when encrypted data is held on-chain. TFHE-rs requires significant space to store ciphertexts, even after [compression](https://www.zama.ai/post/tfhe-rs-v0-7-ciphertext-compression-multi-gpu-support-and-more) (when available):
 
