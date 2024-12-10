@@ -1,6 +1,6 @@
 # Data Privacy Framework
 
-The Data Privacy Framework is an abstract Solidity contract designed to manage conditions and operations related to data privacy. The contract handles operations such as user permissions, time-bound constraints, and condition validation based on various keys and parameters.
+The [**Data Privacy Framework**](https://github.com/coti-io/coti-contracts/blob/main/contracts/access/DataPrivacyFramework/DataPrivacyFramework.sol) is an abstract Solidity contract designed to manage conditions and operations related to data privacy. The contract handles operations such as user permissions, time-bound constraints, and condition validation based on various keys and parameters.
 
 ## Core
 

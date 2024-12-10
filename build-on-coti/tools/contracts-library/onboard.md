@@ -1,6 +1,6 @@
 # Onboard
 
-The AccountOnboard contract is responsible for onboarding user accounts to the system, leveraging RSA public keys and AES encryption. During onboarding, the user's AES encryption key is emitted in an event in encrypted form. This contract interacts with the MPC Core library to retrieve the user key.
+The [**Account Onboard**](https://github.com/coti-io/coti-contracts/blob/main/contracts/onboard/AccountOnboard.sol) contract is responsible for onboarding user accounts to the system, leveraging RSA public keys and AES encryption. During onboarding, the user's AES encryption key is emitted in an event in encrypted form. This contract interacts with the MPC Core library to retrieve the user key.
 
 ## Functions
 

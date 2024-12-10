@@ -34,5 +34,5 @@ Detailed examples of these types and converting between them are found in the [*
 <figure><img src="../../.gitbook/assets/gcevm_lifecycle.jpeg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-It's essential to acknowledge that without a security mechanism in place, there's a risk of potential malicious exploitation of these types. To mitigate such risks, the gcEVM incorporates a security mechanism aimed at preventing any dishonest activities, such as unauthorized copying of secret data. For more information about the security mechanism please refer to the [whitepaper](https://app.gitbook.com/o/-MgoVlq5Hr-DSFn_cBMH/s/eC83qbrBhITO4kE7kTNB/~/changes/1/how-coti-works/advanced-topics/white-paper-0.1).
+It's essential to acknowledge that without a security mechanism in place, there's a risk of potential malicious exploitation of these types. To mitigate such risks, the gcEVM incorporates a security mechanism aimed at preventing any dishonest activities, such as unauthorized copying of secret data. For more information about the security mechanism please refer to the [whitepaper](../../how-coti-works/advanced-topics/white-paper-0.1.md).
 {% endhint %}

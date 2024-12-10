@@ -1,6 +1,6 @@
 # MPC Core
 
-The MPC Core is a library that simplifies interactions with the precompiled contracts which provide core functionalities for secure multi-party computation (MPC) using the COTI protocol.
+The [**MPC Core**](https://github.com/coti-io/coti-contracts/blob/main/contracts/utils/mpc/MpcCore.sol) is a library that simplifies interactions with the precompiled contracts which provide core functionalities for secure multi-party computation (MPC) using the COTI protocol.
 
 ## Usage
 

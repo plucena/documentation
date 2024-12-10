@@ -1,6 +1,6 @@
 # Private ERC721
 
-Private ERC721 is an abstract implementation of the [ERC721 Non-Fungible Token (NFT) Standard](https://eips.ethereum.org/EIPS/eip-721). It includes essential features of the standard, such as token ownership, approval, transfers, and safe transfers. This contract implements key components of the ERC721 standard while maintaining support for token metadata, but without fully implementing the metadata extension.
+The [**Private ERC721**](https://github.com/coti-io/coti-contracts/blob/main/contracts/token/PrivateERC721/PrivateERC721.sol) is an abstract implementation of the [ERC721 Non-Fungible Token (NFT) Standard](https://eips.ethereum.org/EIPS/eip-721). It includes essential features of the standard, such as token ownership, approval, transfers, and safe transfers. This contract implements key components of the ERC721 standard while maintaining support for token metadata, but without fully implementing the metadata extension.
 
 ## Core
 

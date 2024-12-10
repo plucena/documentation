@@ -1,6 +1,6 @@
 # Private ERC20
 
-The Private ERC20 contract is an abstract implementation of a privacy-enhanced ERC20 token. It introduces mechanisms for handling encrypted balances, allowing for more secure and private token transfers. This contract integrates with the MPC Core library for secure multiparty computation (MPC).
+The [**Private ERC20**](https://github.com/coti-io/coti-contracts/blob/main/contracts/token/PrivateERC20/PrivateERC20.sol) contract is an abstract implementation of a privacy-enhanced ERC20 token. It introduces mechanisms for handling encrypted balances, allowing for more secure and private token transfers. This contract integrates with the MPC Core library for secure multiparty computation (MPC).
 
 ## Usage
 
