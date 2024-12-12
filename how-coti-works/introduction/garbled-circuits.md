@@ -13,6 +13,6 @@ To do this, they can use a garbled circuit which can be simplified into the foll
 * **Step 5**. Bob computes the garbled circuit on the garbled input (one label per input wire). This process outputs the bit B in the clear, so now Bob knows the result of the computation. In particular, this result does not reveal any dollar amounts, just an answer to the question of who is richer.
 * **Step 6** — At this point Bob may communicate the result, B, to Alice, so she can learn which of them is richer.
 
-This is obviously a simplified explanation, visit the [[garbled-circuits.md](../advanced-topics/garbled-circuits.md "mention")](https://app.gitbook.com/o/-MgoVlq5Hr-DSFn_cBMH/s/eC83qbrBhITO4kE7kTNB/~/changes/1/how-coti-works/advanced-topics/garbled-circuits) page for a more detailed walkthrough of the process.
+This is obviously a simplified explanation, visit the [**Garbled Circuits**](../advanced-topics/garbled-circuits.md) page for a more detailed walkthrough of the process.
 
 <figure><img src="../../.gitbook/assets/cotygc.png" alt=""><figcaption></figcaption></figure>

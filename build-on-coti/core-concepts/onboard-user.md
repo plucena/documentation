@@ -8,4 +8,4 @@ See the [guide for onboarding an account](../guides/account-onboard.md).
 
 After completing the Account Onboard step the wallet has a functional account with the necessary credentials (having own AES key) allowing it to start interacting with the gcEVM operations, including running smart contracts or performing other actions as needed.
 
-You can fund accounts using the COTI [faucet.md](../../networks/faucet.md "mention").
+You can fund accounts using the [COTI Faucet](../../networks/faucet.md).

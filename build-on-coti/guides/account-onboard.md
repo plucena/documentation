@@ -4,7 +4,7 @@
 This guide assumes you have already deployed the Counter.sol contract. If you haven't already, check out our guide for deploying a [Basic Private Smart Contract](basic-private-smart-contract.md).
 {% endhint %}
 
-In order to interact with the `Counter.sol` smart contract from the previous section, we are going to need to acquire our AES encryption key. To do so, we can use either of COTI's [**Ethers**](../tools/ethers.js.md) or [**web3.py**](../tools/web3.py.md) packages.
+In order to interact with the `Counter.sol` smart contract from the previous section, we are going to need to acquire our AES encryption key. To do so, we can use either of COTI's [**Ethers**](../tools/ethers.js.md) or [**web3.py**](../tools/web3.py.md) packages to complete the [Account Onboarding Procedure](../core-concepts/onboard-user.md).
 
 {% tabs %}
 {% tab title="TypeScript (Server)" %}

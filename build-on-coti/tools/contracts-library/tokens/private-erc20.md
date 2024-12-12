@@ -138,6 +138,8 @@ event Transfer(address indexed from, address indexed to, ctUint64 senderValue, c
 event Approval(address indexed owner, address indexed spender, ctUint64 ownerValue, ctUint64 spenderValue);
 ```
 
+## Errors
+
 ```solidity
 error ERC20InvalidSender(address sender)
 ```
