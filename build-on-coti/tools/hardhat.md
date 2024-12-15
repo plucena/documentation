@@ -1,6 +1,6 @@
 # Hardhat
 
-The easiest way to get started with writing smart contracts on COTI is to clone the [**COTI Hardhat Template**](https://github.com/coti-io/coti-hardhat-template). This template is a simple [**Hardhat**](https://hardhat.org/) project includes all the configurations and packages needed to connect to the Testnet and integrate COTI's privacy features into your own smart contracts.
+The easiest way to get started with writing smart contracts on COTI is to clone the [**COTI Hardhat Template**](https://github.com/coti-io/coti-hardhat-template). This template is a simple [**Hardhat**](https://hardhat.org/) project that includes all the configurations and packages needed to connect to the Testnet and integrate COTI's privacy features into your own smart contracts.
 
 {% hint style="info" %}
 Since the local Hardhat network does not include the precompiled contracts needed for computations on private data types, the **only** way to test contracts that use these features is by running your test scripts on the COTI Testnet.
@@ -18,7 +18,7 @@ Before we can continue with exploring the repository, we have to install the dep
 npm install
 ```
 
-The repository includes a simple privacy-enabled smart contract (`PrivateStorage.sol`) which, as the name suggests, accepts an encrypted input and stores it on-chain. There is also a short test suite included in the template.
+The repository includes a simple privacy-enabled smart contract (`PrivateStorage.sol`) which, as the name suggests, accepts encrypted inputs and stores them on-chain using the user's [AES encryption key](../../how-coti-works/advanced-topics/aes-keys.md). There is also a short test suite included in the template.
 
 To run the test suite, execute the following command in your terminal:
 
