@@ -63,7 +63,7 @@ struct utString
 ## Functions
 
 {% hint style="info" %}
-Since private data types mostly support the same functions, we have chosen to list only the functions pertaining to the itUint64, gtUint64 and ctUint64 types. See [**MpcCore.sol**](https://github.com/coti-io/coti-contracts/blob/smiller-coti/testnet/contracts/utils/mpc/MpcCore.sol) for the full list of supported functions.
+Since private data types mostly support the same functions, we have chosen to list only the functions pertaining to the itUint64, gtUint64 and ctUint64 types. See [**MpcCore.sol**](https://github.com/coti-io/coti-contracts/blob/main/contracts/utils/mpc/MpcCore.sol) for the full list of supported functions.
 {% endhint %}
 
 ### Special Functions

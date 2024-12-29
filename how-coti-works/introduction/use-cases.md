@@ -2,11 +2,11 @@
 
 The incorporation of advanced privacy features expands the possibilities for applications across various sectors. Privacy is at the forefront of these blockchain implementations, offering functionality previously unattainable in public or transparent blockchains.&#x20;
 
-1. Secure tokenization becomes feasible, enabling the exchange of assets while protecting the confidentiality of transaction details. See [**PrivateERC20.sol**](https://github.com/coti-io/coti-contracts/blob/main/contracts/token/PrivateERC20/README.md).
+1. Secure tokenization becomes feasible, enabling the exchange of assets while protecting the confidentiality of transaction details. See [**PrivateERC20.sol**](https://github.com/coti-io/coti-contracts/blob/main/contracts/token/PrivateERC20/PrivateERC20.sol).
 2. Blind auctions can be conducted with utmost privacy, ensuring that bidding amounts remain hidden from public view.  See [**PrivateAuction.sol**](https://github.com/coti-io/coti-contracts-examples/blob/main/contracts/PrivateAuction.sol).
 3. On-chain gaming experiences are enhanced, with privacy mechanisms ensuring the secrecy of players' moves and choices until they opt to reveal them.&#x20;
 4. Confidential voting systems maintain the integrity of elections by preserving the privacy of voters' decisions.&#x20;
-5. Private transfers within a private blockchain ensure the confidentiality of balances and transaction amounts, delivering heightened privacy and security. See [**ConfidentialIdentityRegistry.sol**](https://github.com/coti-io/confidentiality-contracts/blob/main/contracts/examples/ConfidentialIdentityRegistry.sol).
+5. Private transfers within a private blockchain ensure the confidentiality of balances and transaction amounts, delivering heightened privacy and security. See [**PrivateIdentityRegistry.sol**](https://github.com/coti-io/coti-contracts-examples/blob/main/contracts/PrivateIdentityRegistry.sol).
 
 {% hint style="info" %}
 See more use cases and examples on the [**coti-contracts repo on GitHub**](https://github.com/coti-io/coti-contracts/tree/main/contracts).
@@ -17,7 +17,7 @@ These innovative use cases highlight the transformative potential of private blo
 The following high level applications are enabled by the COTI V2 network:
 
 1.  **Confidential DeFi**\
-    DeFi has redefined the financial industry’s landscape, introducing new potential functionalities. Nonetheless, the inherent transparency of on-chain activities necessitates a compromise on privacy, deterring institutional engagement due to regulatory concerns. COTI V2 introduces confidential transactions, enhancing privacy and security for existing services while complying with regulatory standards, thereby expanding DeFi’s in- novation potential. \
+    DeFi has redefined the financial industry’s landscape, introducing new potential functionalities. Nonetheless, the inherent transparency of on-chain activities necessitates a compromise on privacy, deterring institutional engagement due to regulatory concerns. COTI V2 introduces confidential transactions, enhancing privacy and security for existing services while complying with regulatory standards, thereby expanding DeFi’s innovation potential. \
     It addresses long-standing vulnerabilities in Ethereum DeFi, such as exploitation through Miner Extractable Value (MEV), by encrypting transaction details, thus preventing opportunistic behaviors by MEV bots and frontrunners.
 
     \

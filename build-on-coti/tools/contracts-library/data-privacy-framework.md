@@ -153,7 +153,7 @@ contract MyContract is DataPrivacyFrameworkMpc {
 #### Functions
 
 {% hint style="info" %}
-Since each numeric private data type supports the same functions, we have chosen to list only the functions pertaining to the gtUint64 type. See [**DataPrivacyFrameworkMpc.sol**](https://github.com/coti-io/coti-contracts/blob/smiller-coti/testnet/contracts/access/DataPrivacyFramework/extensions/DataPrivacyFrameworkMpc.sol) for the full list of supported functions.
+Since each numeric private data type supports the same functions, we have chosen to list only the functions pertaining to the gtUint64 type. See [**DataPrivacyFrameworkMpc.sol**](https://github.com/coti-io/coti-contracts/blob/main/contracts/access/DataPrivacyFramework/DataPrivacyFramework.sol) for the full list of supported functions.
 {% endhint %}
 
 ```solidity
