@@ -3,7 +3,7 @@
 * [Welcome](README.md)
 * [Networks](networks/README.md)
   * [Faucet](networks/faucet.md)
-  * [Contracts Address](networks/contracts-address.md)
+  * [Contracts Addresses](networks/contracts-addresses.md)
 * [How COTI Works](how-coti-works/README.md)
   * [Introduction](how-coti-works/introduction/README.md)
     * [EVM Introduction](how-coti-works/introduction/evm-introduction.md)

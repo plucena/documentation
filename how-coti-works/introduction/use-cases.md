@@ -6,7 +6,7 @@ The incorporation of advanced privacy features expands the possibilities for app
 2. Blind auctions can be conducted with utmost privacy, ensuring that bidding amounts remain hidden from public view.  See [**PrivateAuction.sol**](https://github.com/coti-io/coti-contracts-examples/blob/main/contracts/PrivateAuction.sol).
 3. On-chain gaming experiences are enhanced, with privacy mechanisms ensuring the secrecy of players' moves and choices until they opt to reveal them.&#x20;
 4. Confidential voting systems maintain the integrity of elections by preserving the privacy of voters' decisions.&#x20;
-5. Private transfers within a private blockchain ensure the confidentiality of balances and transaction amounts, delivering heightened privacy and security. See [**PrivateIdentityRegistry.sol**](https://github.com/coti-io/coti-contracts-examples/blob/main/contracts/PrivateIdentityRegistry.sol).
+5. Private identity registry systems allow authorized registrars to manage user identities and associated encrypted identifiers, while enforcing access control through permissions and ownership mechanisms. See [**PrivateIdentityRegistry.sol**](https://github.com/coti-io/coti-contracts-examples/blob/main/contracts/PrivateIdentityRegistry.sol).
 
 {% hint style="info" %}
 See more use cases and examples on the [**coti-contracts repo on GitHub**](https://github.com/coti-io/coti-contracts/tree/main/contracts).
