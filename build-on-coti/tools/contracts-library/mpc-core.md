@@ -201,6 +201,14 @@ function xor(gtUint64 a, gtUint64 b) returns (gtUint64)
 ```
 
 ```solidity
+function shl(gtUint64 a, uint64 b) returns (gtUint64)
+```
+
+```solidity
+function shr(gtUint64 a, uint64 b) returns (gtUint64)
+```
+
+```solidity
 function eq(gtUint64 a, gtUint64 b) returns (gtBool)
 ```
 

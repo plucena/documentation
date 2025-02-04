@@ -193,6 +193,14 @@ function xor(gtUint64 a, gtUint64 b, uint256 uintParameter, address addressParam
 ```
 
 ```solidity
+function shl(gtUint64 a, uint64 b, uint256 uintParameter, address addressParameter, string calldata stringParameter) returns (gtUint64)
+```
+
+```solidity
+function shr(gtUint64 a, uint64 b, uint256 uintParameter, address addressParameter, string calldata stringParameter) returns (gtUint64)
+```
+
+```solidity
 function eq(gtUint64 a, gtUint64 b, uint256 uintParameter, address addressParameter, string calldata stringParameter) returns (gtBool)
 ```
 
