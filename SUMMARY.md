@@ -51,6 +51,7 @@
       * [Onboard](build-on-coti/tools/contracts-library/onboard.md)
     * [Hardhat](build-on-coti/tools/hardhat.md)
     * [Remix Plugin](build-on-coti/tools/remix-plugin.md)
+    * [COTI MetaMask Snap](build-on-coti/tools/coti-metamask-snap.md)
     * [Developer Sandbox](build-on-coti/tools/developer-sandbox.md)
 * [Support and Community](support-and-community/README.md)
   * [Glossary](support-and-community/glossary.md)
