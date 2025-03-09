@@ -76,12 +76,6 @@ function getUserKey(bytes calldata signedEK, bytes calldata signature) returns (
 * A valid signature using the EOA private key is used to validate the account ownership.
 
 ```solidity
-function deleteUserKey(bytes calldata signature)
-```
-
-* Removes the user's AES encryption key from the system.
-
-```solidity
 function validateCiphertext(itUint64 memory input) returns (gtUint64)
 ```
 
@@ -165,6 +159,10 @@ function checkedAdd(gtUint64 a, gtUint64 b) returns (gtUint64)
 ```
 
 ```solidity
+function checkedAddWithOverflowBit(gtUint64 a, gtUint64 b) returns (gtBool, gtUint64)
+```
+
+```solidity
 function sub(gtUint64 a, gtUint64 b) returns (gtUint64)
 ```
 
@@ -173,11 +171,19 @@ function checkedSub(gtUint64 a, gtUint64 b) returns (gtUint64)
 ```
 
 ```solidity
+function checkedSubWithOverflowBit(gtUint64 a, gtUint64 b) returns (gtBool, gtUint64)
+```
+
+```solidity
 function mul(gtUint64 a, gtUint64 b) returns (gtUint64)
 ```
 
 ```solidity
 function checkedMul(gtUint64 a, gtUint64 b) returns (gtUint64)
+```
+
+```solidity
+function checkedMulWithOverflowBit(gtUint64 a, gtUint64 b) returns (gtBool, gtUint64)
 ```
 
 ```solidity
@@ -201,11 +207,11 @@ function xor(gtUint64 a, gtUint64 b) returns (gtUint64)
 ```
 
 ```solidity
-function shl(gtUint64 a, uint64 b) returns (gtUint64)
+function shl(gtUint64 a, uint8 b) returns (gtUint64)
 ```
 
 ```solidity
-function shr(gtUint64 a, uint64 b) returns (gtUint64)
+function shr(gtUint64 a, uint8 b) returns (gtUint64)
 ```
 
 ```solidity

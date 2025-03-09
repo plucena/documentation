@@ -193,11 +193,11 @@ function xor(gtUint64 a, gtUint64 b, uint256 uintParameter, address addressParam
 ```
 
 ```solidity
-function shl(gtUint64 a, uint64 b, uint256 uintParameter, address addressParameter, string calldata stringParameter) returns (gtUint64)
+function shl(gtUint64 a, uint8 b, uint256 uintParameter, address addressParameter, string calldata stringParameter) returns (gtUint64)
 ```
 
 ```solidity
-function shr(gtUint64 a, uint64 b, uint256 uintParameter, address addressParameter, string calldata stringParameter) returns (gtUint64)
+function shr(gtUint64 a, uint8 b, uint256 uintParameter, address addressParameter, string calldata stringParameter) returns (gtUint64)
 ```
 
 ```solidity
