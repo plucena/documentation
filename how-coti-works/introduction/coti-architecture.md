@@ -1,6 +1,8 @@
 # COTI Architecture
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Topology of the COTI Network</p></figcaption></figure>
+
+
+<figure><img src="../../.gitbook/assets/GC flow flipped(1).png" alt=""><figcaption></figcaption></figure>
 
 The COTI network is comprised of several core components:
 
@@ -9,7 +11,7 @@ The COTI network is comprised of several core components:
 3. **Executors**: Two separate executors that process blocks in a MPC manner:
    * **Red Blocks**: incoming blocks processed from the sequencer to the executors.
    * **Black Blocks**: outgoing blocks processed from the executor to the sequencer.
-4. **DB Manager**: Stores the generated garbled circuits in data warehouse, these circuits are used by the executors for on-chain computation.
+4. **GC Manager**: Stores the generated garbled circuits in data warehouse, these circuits are used by the executors for on-chain computation.
 5. **Garbler**: Generates garbled circuits that are stored into the DB Manager to be used later on during on-chain computation.
 
 The network uses a multi-tier architecture to optimize transaction flow and ensure scalability, with the sequencer bridging full nodes to the execution layer and the database manager and garbler handling persistence and post-processing.
