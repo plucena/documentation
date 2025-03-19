@@ -141,37 +141,27 @@ Following Recommended steps are ones that as under best-practices but should be 
     {% endcode %}
 
 
-4.  **Start Your Node**
+4. **Start Your Node**
+   1.  Navigate to the newly created "coti-full-node" directory
 
-    1.  Navigate to the newly created "coti-full-node" directory
+       `cd coti-full-node`
+   2.  Execute node start script
 
-        {% code fullWidth="false" %}
-        ```bash
-        cd coti-full-node
-        ```
-        {% endcode %}
-    2.  Execute node start script
-
-        ./start\_coti-fullnode.sh
-    3. Once the docker-compose has started the node, liveliness check will be executed
-
-    ```sh
-    ./liveness_coti-fullnode.sh
-    ```
-
-    {% code overflow="wrap" fullWidth="false" %}
-    ```bash
-    Output example:
-
-    Initial block number: 208539
-    Check 1: Block number is 208540
-    Block number has progressed. Node is syncing.
-    ```
-    {% endcode %}
+       `./start_coti-fullnode.sh`
+   3. Once the docker-compose has started the node, liveliness check will be executed\
+      `./liveness_coti-fullnode.sh`
 
 {% hint style="info" %}
 If liveliness check passed locally it means that your node is syncing with the other nodes in the network
 {% endhint %}
+
+&#x20;         Output example:
+
+```
+Initial block number: 208539
+Check 1: Block number is 208540
+Block number has progressed. Node is syncing.
+```
 
 5.  **Check Node Logs**
 
@@ -210,8 +200,8 @@ If you are running a node without a license, no further configuration of the nod
 
 * Metrics: Visit [**uptime.coti.io**](https://uptime.coti.io) to track performance and status, for Mainnet nodes.
 * Node availability is crucial for the smooth operation of the network. \
-  In order to rank the availability as a metrics, COTI is using existing platform that presents publicly.\
-  Node is consider available by responding to request of the eth\_blockNumber, using this request helps making sure that node is progressing with network synchronization, hence, healthy node.
+  In order to rank the availability as a metrics, COTI is using existing platform and presents it publicly.\
+  Node is consider available by responding to request of the `eth_blockNumber`, using this request helps making sure that node is progressing with network synchronization, hence, healthy node.
 
 ### Incentives
 
