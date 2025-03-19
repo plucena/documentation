@@ -12,10 +12,5 @@ To request Devnet/Testnet tokens:
    \
    For Example:\
    \
-   `devnet 0xDA8004D6AB073B9D5549b7D5599D51FF1191C747`\
-   (for devnet funds request)\
-   \
-   OR\
-   \
    `testnet 0xDA8004D6AB073B9D5549b7D5599D51FF1191C747`\
    (for testnet funds request)
