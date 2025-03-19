@@ -31,7 +31,7 @@ COTI Full Node software is provided as a docker image.
 #### Software
 
 * **Operating System**: the following operating systems have been certified to run the node software:
-  * Ubuntu 24.04.x (see [**Linux Requirements**](https://docs.docker.com/desktop/setup/install/linux/#general-system-requirements)[ **for Docker**](https://docs.docker.com/desktop/setup/install/linux/#general-system-requirements)**)**
+  * Ubuntu 24.04.x (see [**Linux Requirements for Docker**](https://docs.docker.com/desktop/setup/install/linux/#general-system-requirements)**)**
 * **Docker**:  version 28.0.1
 * **Docker-Compose:** version 2.29.1
 
