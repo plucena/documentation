@@ -88,7 +88,7 @@ The following recommended steps reflect best practices but should be performed c
 
        {% code fullWidth="false" %}
        ```bash
-       sudo hostnamectl set-hostname fullnode-<name>
+       sudo hostnamectl set-hostname <name>-full-node
        ```
        {% endcode %}
 
@@ -162,14 +162,14 @@ The following recommended steps reflect best practices but should be performed c
    2.  Execute node start script
 
        ```
-       ./start_coti-fullnode.sh
+       ./start_coti-full-node.sh
        ```
 
 
    3.  Once the docker-compose has started the node, liveliness check will be executed
 
        ```
-       ./liveness_coti-fullnode.sh
+       ./liveness_coti-full-node.sh
        ```
 
        \
@@ -190,7 +190,7 @@ If liveliness check passed locally it means that your node is syncing with the o
 
 
     ```
-    docker logs -f coti-fullnode
+    docker logs -f coti-full-node
     ```
 
 ### Restarting Your Node
@@ -201,7 +201,7 @@ To restart your node follow these steps:
 
     {% code fullWidth="false" %}
     ```bash
-    ./stop_coti-fullnode.sh
+    ./stop_coti-full-node.sh
     ```
     {% endcode %}
 
