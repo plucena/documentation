@@ -64,8 +64,8 @@ _**Disclaimer**: The above configuration has been certified on Testnet; higher t
 * **Open Ports**: You need to open the following ports in your firewall or cloud environment to allow inbound connections:
   * 8545 - Allowing RPC requests to flow in
   * 8546 - Allowing WebSocket connection to flow in
-  * 7400 - Allowing peer-2-peer connection
-* **Static IP**: Requirement is to have a stable access to RPC so metering of health could be performed.
+  * 7400 - Allowing peer-to-peer connection
+* **Static IP**: Required to ensure stable RPC access, enabling continuous health monitoring.
 
 ***
 
@@ -80,7 +80,7 @@ COTI full nodes are run using docker. Docker provides a way for everyone to run 
 ### Installation Steps
 
 {% hint style="info" %}
-Following Recommended steps are ones that as under best-practices but should be handled carefully as they might have a serious impact over the operating system.
+The following recommended steps reflect best practices but should be performed carefully, as they may significantly impact the operating system.
 {% endhint %}
 
 1. **Recommended steps:**
@@ -141,43 +141,36 @@ Following Recommended steps are ones that as under best-practices but should be 
     {% endcode %}
 
 
-4.  **Start Your Node**
+4. **Start Your Node**
+   1.  Navigate to the newly created "coti-full-node" directory
 
-    1. Navigate to the newly created "coti-full-node" directory
+       {% code fullWidth="false" %}
+       ```bash
+       cd coti-full-node
+       ```
+       {% endcode %}
+   2.  Execute node start script
 
+       ```
+       ./start_coti-fullnode.sh
+       ```
+   3.  Once the docker-compose has started the node, liveliness check will be executed
 
+       ```
+       ./liveness_coti-fullnode.sh
+       ```
 
-    {% code fullWidth="false" %}
-    ```bash
-    cd ./coti-full-node
-    ```
-    {% endcode %}
+       \
+       Output example:
 
-
-
-    b. Execute node start script
-
-
-
-    {% code fullWidth="false" %}
-    ```bash
-    ./start_coti-fullnode.sh
-    ```
-    {% endcode %}
-
-    \
-    c. Once the docker-compose has started the node, liveliness check will be executed
-
-
-
-    {% code fullWidth="false" %}
-    ```bash
-    ./liveliness_coti_full-node.sh
-    ```
-    {% endcode %}
+       ```
+       Initial block number: 208539
+       Check 1: Block number is 208540
+       Block number has progressed. Node is syncing.
+       ```
 
 {% hint style="info" %}
-If liveliness check passed locally it means that your node is syncing with the other nodes in the network
+If liveliness check passed locally it means that your node is syncing with the other nodes in the network.
 {% endhint %}
 
 &#x20;         Output example:
@@ -223,10 +216,10 @@ If you are running a node without a license, no further configuration of the nod
 
 ### Verifying Node Functionality
 
-* Metrics: Visit [**uptime.coti.io**](https://uptime.coti.io) to track performance and status, for Mainnet nodes.
+* Metrics: Visit [**uptime.coti.io**](https://uptime.coti.io) to track performance and status (Mainnet nodes only).
 * Node availability is crucial for the smooth operation of the network. \
-  In order to rank the availability as a metrics, COTI is using existing platform and presents it publicly.\
-  Node is consider available by responding to request of the `eth_blockNumber`, using this request helps making sure that node is progressing with network synchronization, hence, healthy node.
+  \
+  To evaluate node availability, COTI leverages a monitoring platform that publishes this data. A node is considered available if it successfully responds to the `eth_blockNumber` request. Using this request ensures the node is actively synchronized with the network and functioning correctly.
 
 ### Incentives
 
@@ -238,9 +231,9 @@ For more information on incentives, visit the "Node Economy" section of the [cot
 
 ### Maintenance & Monitoring
 
-1. Regular Updates: Keep your node software updated to the latest version. This ensures you receive security patches and new features.
-2. Resource Usage: Monitor CPU, RAM, and disk space to ensure uninterrupted operation.
-3. Uptime: Use a process manager (like `systemd`) or Docker auto-restart policies to keep your node running if it crashes unexpectedly.
+1. **Regular Updates**: Keep your node software updated to the latest version. This ensures you receive security patches and new features.
+2. **Resource Usage**: Monitor CPU, RAM, and disk space to ensure uninterrupted operation.
+3. **Uptime**: Use a process manager (like `systemd`) or Docker auto-restart policies to keep your node running if it crashes unexpectedly.
 
 ### Troubleshooting
 
