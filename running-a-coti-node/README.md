@@ -141,15 +141,40 @@ Following Recommended steps are ones that as under best-practices but should be 
     {% endcode %}
 
 
-4. **Start Your Node**
-   1.  Navigate to the newly created "coti-full-node" directory
+4.  **Start Your Node**
 
-       `cd coti-full-node`
-   2.  Execute node start script
+    1. Navigate to the newly created "coti-full-node" directory
 
-       `./start_coti-fullnode.sh`
-   3. Once the docker-compose has started the node, liveliness check will be executed\
-      `./liveness_coti-fullnode.sh`
+
+
+    {% code fullWidth="false" %}
+    ```bash
+    cd ./coti-full-node
+    ```
+    {% endcode %}
+
+
+
+    b. Execute node start script
+
+
+
+    {% code fullWidth="false" %}
+    ```bash
+    ./start_coti-fullnode.sh
+    ```
+    {% endcode %}
+
+    \
+    c. Once the docker-compose has started the node, liveliness check will be executed
+
+
+
+    {% code fullWidth="false" %}
+    ```bash
+    ./liveliness_coti_full-node.sh
+    ```
+    {% endcode %}
 
 {% hint style="info" %}
 If liveliness check passed locally it means that your node is syncing with the other nodes in the network
@@ -163,9 +188,9 @@ Check 1: Block number is 208540
 Block number has progressed. Node is syncing.
 ```
 
-5.  **Check Node Logs**
+5.  **To Check Node Logs**
 
-    1. Check logs as needed
+
 
     ```
     docker logs -f coti-fullnode
