@@ -53,6 +53,8 @@
     * [Remix Plugin](build-on-coti/tools/remix-plugin.md)
     * [COTI MetaMask Snap](build-on-coti/tools/coti-metamask-snap.md)
     * [Developer Sandbox](build-on-coti/tools/developer-sandbox.md)
+* [Running a COTI Node](running-a-coti-node/README.md)
+  * [COTI Node Ecosystem Litepaper](running-a-coti-node/coti-node-ecosystem-litepaper.md)
 * [Support and Community](support-and-community/README.md)
   * [Glossary](support-and-community/glossary.md)
   * [Telegram](https://telegram.coti.io)
