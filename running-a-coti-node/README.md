@@ -220,7 +220,12 @@ If you are running a node without a license, no further configuration of the nod
 
 ### Verifying Node Functionality
 
-* Metrics: Visit [**uptime.coti.io**](https://uptime.coti.io) to track performance and status (Mainnet nodes only).
+* Metrics: Visit [**uptime.coti.io**](https://uptime.coti.io) to track performance and status.
+
+{% hint style="info" %}
+Metrics monitoring is not available yet for Testnet .
+{% endhint %}
+
 * Node availability is crucial for the smooth operation of the network. \
   \
   To evaluate node availability, COTI leverages a monitoring platform that publishes this data. A node is considered available if it successfully responds to the `eth_blockNumber` request. Using this request ensures the node is actively synchronized with the network and functioning correctly.
