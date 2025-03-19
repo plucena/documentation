@@ -91,6 +91,8 @@ The following recommended steps reflect best practices but should be performed c
        sudo hostnamectl set-hostname fullnode-<name>
        ```
        {% endcode %}
+
+
    2.  Update package lists
 
        {% code fullWidth="false" %}
@@ -99,6 +101,8 @@ The following recommended steps reflect best practices but should be performed c
        sudo apt upgrade
        ```
        {% endcode %}
+
+
    3.  Reboot system
 
        {% code fullWidth="false" %}
@@ -106,6 +110,8 @@ The following recommended steps reflect best practices but should be performed c
        sudo reboot
        ```
        {% endcode %}
+
+
    4.  Update OS
 
        {% code fullWidth="false" %}
@@ -123,6 +129,8 @@ The following recommended steps reflect best practices but should be performed c
        sudo usermod -aG docker $( whoami )
        ```
        {% endcode %}
+
+
    *   Logout and re-login
 
        {% code fullWidth="false" %}
@@ -149,11 +157,15 @@ The following recommended steps reflect best practices but should be performed c
        cd coti-full-node
        ```
        {% endcode %}
+
+
    2.  Execute node start script
 
        ```
        ./start_coti-fullnode.sh
        ```
+
+
    3.  Once the docker-compose has started the node, liveliness check will be executed
 
        ```
@@ -172,14 +184,6 @@ The following recommended steps reflect best practices but should be performed c
 {% hint style="info" %}
 If liveliness check passed locally it means that your node is syncing with the other nodes in the network.
 {% endhint %}
-
-&#x20;         Output example:
-
-```
-Initial block number: 208539
-Check 1: Block number is 208540
-Block number has progressed. Node is syncing.
-```
 
 5.  **To Check Node Logs**
 
