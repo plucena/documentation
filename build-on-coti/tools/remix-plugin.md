@@ -3,7 +3,7 @@
 The COTI Remix plugin seamlessly integrates with the Remix IDE, enabling developers to deploy and interact with contracts on the COTI network.
 
 {% hint style="info" %}
-**NOTE:** The COTI Remix plugin currently works only with COTI Devnet. Support for COTI Testnet will be published in the coming days.
+**NOTE:** The COTI Remix plugin currently works only with COTI Testnet. Support for COTI Mainnet will be published in the coming days.
 {% endhint %}
 
 {% embed url="https://youtu.be/o59aENKhkAI?si=zckDPCC4vYFoRvRC" %}
@@ -33,16 +33,16 @@ Remix Plugin Demo
 The environment section (located at the bottom of the plugin) allows you to select the environment you wish to use to connect to the COTI network. Two options are available:
 
 1. **Wallet**: This option uses a browser-based wallet (i.e., MetaMask). You will need to have the COTI network added to your wallet. You may add the COTI network by visiting [Chainlist](https://chainlist.org/chain/13068200).
-2. **Manual (Devnet)**: This option creates 2 accounts for you in the COTI network.
+2. **Manual (Testnet)**: This option creates 2 accounts for you in the COTI network.
 
 Both options are tracked in the `coti_wallet_config.json` file, stored at the root of your workspace.
 
 #### 1. Faucet
 
-The Faucet section will display your account balance and provide a link to the [COTI faucet](https://faucet.coti.io/) on Discord. To request funds send a message to the bot using the format: `devnet <address>`, for example:
+The Faucet section will display your account balance and provide a link to the [COTI faucet](https://faucet.coti.io/) on Discord. To request funds send a message to the bot using the format: `testnet <address>`, for example:
 
 ```
-devnet 0xDa28f69CbB6d6072DA4bb10378fB87e367c6dF0D
+testnet 0xDa28f69CbB6d6072DA4bb10378fB87e367c6dF0D
 ```
 
 #### 2. Onboard
