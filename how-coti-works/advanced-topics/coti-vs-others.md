@@ -1,6 +1,6 @@
 # COTI vs others
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>COTI technology compared to the competition</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>COTI technology compared to the competition</p></figcaption></figure>
 
 COTI V2, powered by Garbled Circuits (GC), offers unmatched capabilities in privacy-preserving computation, setting a new standard for building multi-party applications like privacy DEXs. Unlike competing technologies such as TEE, ZK-SNARK, MPC, and FHE, Garbled Circuits excel in delivering low-latency performance, compatibility across any device, and resilience through the absence of a single point of failure. With the added advantage of light storage requirements, COTI V2 ensures seamless scalability without compromising efficiency. This cutting-edge approach positions COTI V2 as the leading solution for secure, high-performance applications, driving innovation in privacy-centric blockchain technology.
 
@@ -14,7 +14,7 @@ COTI’s garbled circuits performed between 1,800 and 3,000 times faster than th
 
 Figures for the performance of TFHE-rs are taken from [**Zama’s CPU benchmarking tests**](https://docs.zama.ai/tfhe-rs/get-started/benchmarks), which were launched on an AWS hpc7a.96xlarge instance equipped with an AMD EPYC 9R14 CPU @ 2.60GHz and 740 GB of RAM.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 COTI’s tests timed how low long it takes to execute a series of OPCODES 1,000 times for different bit-length inputs, and were conducted on a lower-powered machine than the TFHE-rs tests to avoid unfair advantage.
 

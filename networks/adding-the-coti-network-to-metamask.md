@@ -5,13 +5,16 @@ Follow these instructions to add the COTI network directly to your MetaMask wall
 ### Mainnet
 
 1. Open MetaMask.
-2. Click on the dropdown of networks and select **"Add a Custom Network"**.
+2. Click on the dropdown of networks and select **"Add a Custom Network"**.\
+   ![](../.gitbook/assets/image.png).            ![](<../.gitbook/assets/image (1).png>)
 3. Fill in the following info:
    * **Network Name:** COTI
    * **New RPC URL:** `https://mainnet.coti.io/rpc`
    * **Chain ID:** `2632500`
    * **Currency Symbol:** COTI
-   * **Block Explorer URL:** `https://mainnet.cotiscan.io`
+   * **Block Explorer URL:** `https://mainnet.cotiscan.io` \
+     \
+     ![](<../.gitbook/assets/image (5).png>)
 4. Click **Save**.
 
 ### Testnet
