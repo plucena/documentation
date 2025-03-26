@@ -4,6 +4,7 @@
 * [Networks](networks/README.md)
   * [Faucet](networks/faucet.md)
   * [Contracts Addresses](networks/contracts-addresses.md)
+  * [Adding the COTI Network to Metamask](networks/adding-the-coti-network-to-metamask.md)
 * [How COTI Works](how-coti-works/README.md)
   * [Introduction](how-coti-works/introduction/README.md)
     * [EVM Introduction](how-coti-works/introduction/evm-introduction.md)
