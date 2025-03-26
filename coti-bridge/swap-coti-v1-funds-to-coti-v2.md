@@ -1,4 +1,4 @@
-# Swap VIPER Funds to COTI V2
+# Swap COTI V1 Funds to COTI V2
 
 With launch of the COTI V2 network, users who hold legacy COTI tokens in their VIPER wallets are able to upgrade these tokens to native COTI V2 tokens.&#x20;
 
@@ -19,12 +19,12 @@ Follow these simple steps:
    *   Once logged in, locate and click on the **SEND/RECEIVE** section.\
 
 
-       <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 3. **Initiate Token Swap**
    *   Click on the **Swap to COTI V2** button on the lower right hand side of the screen.\
 
 
-       <figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
    * If the COTI network is not yet added to MetaMask, you will be prompted to add it first.
    * If the COTI network is already added, MetaMask will prompt you to connect to [**pay.coti.io**](https://pay.coti.io).
 4. **Configure Swap Parameters and Execute Swap**\
