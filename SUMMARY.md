@@ -57,7 +57,7 @@
 * [Running a COTI Node](running-a-coti-node/README.md)
   * [COTI Node Ecosystem Litepaper](running-a-coti-node/coti-node-ecosystem-litepaper.md)
 * [COTI Bridge](coti-bridge/README.md)
-  * [Swap VIPER Funds to COTI V2](coti-bridge/swap-viper-funds-to-coti-v2.md)
+  * [Swap COTI V1 Funds to COTI V2](coti-bridge/swap-coti-v1-funds-to-coti-v2.md)
 * [Support and Community](support-and-community/README.md)
   * [Glossary](support-and-community/glossary.md)
   * [Telegram](https://telegram.coti.io)
