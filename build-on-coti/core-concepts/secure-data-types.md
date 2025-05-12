@@ -4,13 +4,13 @@ The gcEVM extends the capabilities of the EVM across various dimensions. Initial
 
 ## Data Types
 
-To support privacy, we introduce a new set of data types mirroring the existing solidity types with size of up to 64 bits.\
+To support privacy, we introduce a new set of data types mirroring the existing solidity types.\
 We present four new types needed for manipulating private smart contracts:
 
-* Ciphertext (ctBool, ctUint8, ctUint16, ctUint32, ctUint64, ctString)
-* Usertext (utBool, utUint8, utUint16, utUint32, utUint64, utString)
-* Inputtext (itBool, itUint8, itUint16, itUint32, itUint64, itString)
-* Garbledtext™ (gtBool, gtUint8, gtUint16, gtUint32, gtUint64, gtString)
+* Ciphertext (ctBool, ctUint8, ctUint16, ctUint32, ctUint64, ctUint128, ctUint256, ctString)
+* Usertext (utBool, utUint8, utUint16, utUint32, utUint64, utUint128, utUint256, utString)
+* Inputtext (itBool, itUint8, itUint16, itUint32, itUint64, itUint128, itUint256, itString)
+* Garbledtext™ (gtBool, gtUint8, gtUint16, gtUint32, gtUint64, gtUint128, gtUint256, gtString)
 
 We make a distinction between private data types that are used for encrypting the values of transaction inputs, variables stored in storage slots and variables stored in memory. That is, while the Ciphertext and Usertext data types (denoted CT and UT respectively) are used to secure data in storage, we use the Inputtext data type (denoted IT) for protecting data in transaction inputs and the Garbledtext™ data type (denoted GT) for protecting data in use.
 
