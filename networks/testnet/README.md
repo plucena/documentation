@@ -9,3 +9,9 @@ Testnet runs the same code as the COTI v2 Mainnet, designed to provide a pre-pro
 | COTI TestNet                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <ul><li>Network name: COTI Testnet</li><li>RPC URL: <a href="https://testnet.coti.io/rpc">https://testnet.coti.io/rpc</a></li><li>WS URL: <a href="wss://testnet.coti.io/ws">wss://testnet.coti.io/ws</a></li><li>Chain ID: 7082400</li><li>Currency symbol: COTI</li><li>Block explorer URL: <a href="https://testnet.cotiscan.io">https://testnet.cotiscan.io</a></li><li>Testnet status page: <a href="https://uptime.coti.io/">https://uptime.coti.io</a></li></ul> |
+
+**Hard Forks**
+
+| Version                               | Hard Fork | Block #   |
+| ------------------------------------- | --------- | --------- |
+| [v.1.1.4](../release-notes/v1.1.4.md) | hydrogen  | 2,052,528 |
